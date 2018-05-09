@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginRegistrazioneController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <HBox prefHeight="390.0" prefWidth="600.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0">
+                           <children>
+                              <Label text="LOGIN:" />
+                              <Label text="Username:">
+                                 <VBox.margin>
+                                    <Insets top="70.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtUsernameLogin" alignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="Password:">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <PasswordField fx:id="txtPasswordLogin" alignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </PasswordField>
+                              <Button fx:id="btnlogin" alignment="CENTER" mnemonicParsing="false" onAction="#Login" prefWidth="80.0" text="Login">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <CheckBox fx:id="cbSalvaCredenziali" mnemonicParsing="false" prefWidth="110.0" text="Salva credenziali">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0">
+                           <children>
+                              <Label text="REGISTRAZIONE:" />
+                              <Label text="Username:">
+                                 <VBox.margin>
+                                    <Insets top="70.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtUsernameReg" alignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="Password:">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <PasswordField fx:id="txtPasswordReg" alignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </PasswordField>
+                              <Button fx:id="btnRegistrazione" alignment="CENTER" mnemonicParsing="false" onAction="#Registrazione" prefWidth="80.0" text="Registrati">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#Spiegazione" prefWidth="80.0" text="help">
+                           <HBox.margin>
+                              <Insets left="440.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
